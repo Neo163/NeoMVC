@@ -4,7 +4,6 @@ PHP MVC is a custom developed PHP MVC made by Neo.
 # PHP MVC detail
 Default url, show the logs data:<br/>
 http://localhost/PHPMVC/index.php?l=web&c=index&m=index<br/>
-<br/>
 
 Log url, insert log data:<br/>
 http://localhost/PHPMVC/index.php?l=web&c=index&m=log<br/>
