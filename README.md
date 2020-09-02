@@ -2,15 +2,16 @@
 PHP MVC is a custom developed PHP MVC made by Neo.
 
 # PHP MVC detail
-Default url, show the logs data:
-http://localhost/PHPMVC/index.php?l=web&c=index&m=index
+Default url, show the logs data:<br/>
+http://localhost/PHPMVC/index.php?l=web&c=index&m=index<br/>
+<br/>
 
-Log url, insert log data:
-http://localhost/PHPMVC/index.php?l=web&c=index&m=log
+Log url, insert log data:<br/>
+http://localhost/PHPMVC/index.php?l=web&c=index&m=log<br/>
 
-Parameter "l" is the folder of controllers
-Parameter "c" is the controller file name
-Parameter "m" is the controller method 
+Parameter "l" is the folder of controllers<br/>
+Parameter "c" is the controller file name<br/>
+Parameter "m" is the controller method <br/>
 
-For example, location: "\app\web\controllers\IndexController.php", controller: "IndexController.php", method: "index()", the url is:
-http://localhost/PHPMVC/index.php?l=web&c=index&m=index
+For example, location: "\app\web\controllers\IndexController.php", controller: "IndexController.php", method: "index()", the url is:<br/>
+http://localhost/PHPMVC/index.php?l=web&c=index&m=index<br/>
