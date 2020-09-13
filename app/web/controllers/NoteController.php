@@ -66,11 +66,11 @@ class NoteController extends Controller
 
 	public function search()
 	{
-		// if($_SERVER['REQUEST_METHOD'] != 'POST')
-		// {
-		// 	echo 'Permission denied !';
-		// 	exit;
-		// }
+		if($_SERVER['REQUEST_METHOD'] != 'POST')
+		{
+			echo 'Permission denied !';
+			exit;
+		}
 
 		$keyword = trim($_POST["keyword"]);
 		
@@ -104,7 +104,6 @@ class NoteController extends Controller
 
 	public function pages()
 	{
-        $this->db = new \app\web\models\DbModel();
         $table = 'notes';
 	    $num = 5; // Evey page number record
 	    $page = isset($_GET['p']) ? $_GET['p'] : 1; // If $page has a get pass value, get it, if not, it will default to the first page
