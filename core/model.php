@@ -36,26 +36,6 @@ class Model
 	public  function preInsert($sql, $queryArray){
 		return $this->db->preInsert($sql, $queryArray);
 	}
-
-	// Get IP address
-	public function test()
-	{
-		$serverName = "10.6.249.116,50266";
-		$database = "trade_code";
-		$username = "trade_code";
-		$password = "trade_code123";
-
-		$database = new PDO("sqlsrv:server=$serverName;Database=$database", $username,$password, array( PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ) );
-
-		$sql = "SELECT TOP (30) * FROM tb_uctradecode ";
-		$stmt = $database->prepare($sql);
-		$stmt->execute();
-
-		foreach($stmt->fetchAll() as $k=>$row) 
-		{   
-			echo $row['ID'].' | '.$row['FHSCODE'].' | '.$row['NAMEE'].'<br/>';
-		}
-	}
  
 	// Construct full table name
 	protected function getTable(string $table){

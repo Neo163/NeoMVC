@@ -1,7 +1,9 @@
 <?php 
 
 namespace app\web\controllers;
+
 use \core\controller;
+use app\web\controllers\LogController;
 
 class IndexController extends Controller
 {
@@ -48,9 +50,7 @@ class IndexController extends Controller
 
 	public function log()
 	{
-		$log = new \app\web\controllers\LogController();
-
-		$log->preInsert_log('logs', 'testing log', null);
+		LogController::preInsertLog('logs', 'testing log', null);
 	}
 
 	// No prepare data to select

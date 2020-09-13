@@ -1,6 +1,7 @@
 <?php 
 
 namespace app\web\controllers;
+
 use \core\controller;
 
 class NoteController extends Controller

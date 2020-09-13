@@ -1,6 +1,6 @@
 <?php 
  
-// Default url: http://localhost/0HoData/creative_cms/index.php?l=web&c=index&m=index
+// Default url: /index.php?l=web&c=index&m=index
 
 // Entry mark
 define('ACCESS',TRUE);
@@ -14,5 +14,6 @@ require ROOT_PATH . 'core/initial.php';
 // Activate the initialization file
 \core\Initial::start();
 
-// Default url: http://localhost/0HoData/creative_cms/index.php?l=web&c=index&m=index
-// Log url: http://localhost/0HoData/creative_cms/index.php?l=web&c=index&m=log
+// Default url: /index.php?l=web&c=index&m=index
+// Notes url: /index.php?l=web&c=note&m=index
+// Logs url: /index.php?l=web&c=index&m=log

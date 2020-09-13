@@ -1,21 +1,22 @@
 <?php 
 
 namespace app\web\controllers;
+
 use \core\controller;
 
 class LogController extends Controller
 {
 	public function __construct()
 	{
-		$this->db = new \app\web\models\DbModel();
+		// $this->db = new \app\web\models\DbModel();
 	}
 
-	public function test()
+	static function test()
 	{
 		echo 'Testing text !';
 	}
 	
-	public function preInsert_log($table, $title, $description)
+	static function preInsertLog($table, $title, $description)
 	{
 		if( !empty($title) )
 		{
@@ -38,7 +39,8 @@ class LogController extends Controller
 		    // $queryArray['updated_time'] = date('Y-m-d H:i:s');
 			
 			// Prepare data to insert
-			$stmt = $this->db->preInsert($sql, $queryArray); 
+			$db = new \app\web\models\DbModel();
+			$db->preInsert($sql, $queryArray);
 		}
 
 		echo 'insert log';
